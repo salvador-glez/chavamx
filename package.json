@@ -7,11 +7,11 @@
         "dev": "vite",
         "build": "tsc && vite build",
         "preview": "vite preview",
-        "test": "vitest",
+        "test": "vitest --run",
         "lint": "eslint \"**/*.{js,jsx,ts,tsx}\" --ignore-path .gitignore"
     },
     "lint-staged": {
-        "*.{js,ts,tsx}": [
+        "*.{js,jsx,ts,tsx}": [
             "eslint --quiet --cache --fix"
         ],
         "*.{json,js,ts,jsx,tsx,html}": [
