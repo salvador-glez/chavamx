@@ -13,8 +13,8 @@ describe('getFullYear', () => {
     })
 
     test('gets current year', () => {
-        const mockedSystemDate = new Date(2000, 1, 1, 1)
+        const mockedSystemDate = new Date(2001, 1, 1, 1)
         vi.setSystemTime(mockedSystemDate)
-        expect(getFullYear()).toBe(2000)
+        expect(getFullYear()).toBe(2001)
     })
 })
